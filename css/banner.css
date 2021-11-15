@@ -1,0 +1,70 @@
+#banner{
+  margin-top: 0px;  /* El banner empiece desde debajo del header */
+  position: relative;
+}
+
+#banner img{
+  width: 50%;
+  height:200vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#banner .contenedor {
+  position: absolute;
+  top:36%;
+  left: 50%;
+  transform: translateX(-50%); /* El texto se encuentre en el medio del banner */
+  color: #fff;
+}
+
+#banner h2{
+  font-size: 26px;
+}
+
+#banner a{
+  display: block;
+  width: 100px;
+  color: #fff;
+  text-decoration: none;  /* Quitar subrayado */
+  padding: 7px;
+  margin-top: 10px;
+  border: 3px solid #fff;
+}
+
+#banner a:hover{
+  background: rgba(51, 51, 51, 0.0);
+}
+
+/* responsive */
+
+@media (min-width:480px) { /* banner tablets*/
+  #banner h2{
+    font-size: 40px;
+  }
+
+  #banner a{
+    margin-top: 25px; /* borde lado izquierdo */
+  }
+}
+
+@media (min-width:768px) { /* banner tablets*/
+  #banner{
+    height: 650px;
+    overflow:  hidden;
+  }
+
+  #banner img{
+    height: auto;
+    margin-top: -100px;
+  }
+}
+
+@media (min-width:768px) { /* banner pc*/
+  #banner img{
+    height: auto;
+    margin-top: -200px;
+  }
+}

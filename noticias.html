@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/fontello.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/noticias.css">
+  <title>Futbolin</title>
+
+  <style type="text/css">
+
+
+    .color {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      margin: 15px;
+      float: left;
+      float: right;
+    }
+  </style>
+
+<script>
+
+
+          function cambiarColor(){
+            var selectValue = document.getElementById("colorch").value;
+            document.body.style.backgroundColor=selectValue;
+          }
+
+          function cambiarColorText(){
+            var selectValue = document.getElementById("colorch1").value;
+            document.style.Color=selectValue;
+          }
+
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="contenedor">
+      <h1 class="icon-soccer-ball">Futbolin</h1>
+      <input type="checkbox" id="menu-bar">
+      <label class="icon-menu"for="menu-bar"></label>
+
+      <nav class="menu">
+        <li class=""><a href="index.html" style="color:rgb(255, 255, 255);">Inicio</a></li>
+        <li><a href="noticias.html" style="color:rgb(255, 255, 255);" >Noticias</a></li>
+            <li><a href=".html" style="color:rgb(255, 255, 255);">America</a>
+              <ul class="submenu">
+                <li><a href="Liga Aguila.html" >Liga Aguila</a></li>
+                <li><a href="Brasil A.html">Brasil A</a></li>
+                <li><a href="Liga Argentina.html">Liga Argentina</a></li>
+                <li><a href="Liga MLS.html">Liga MLS</a></li>
+                <li><a href="Liga mx.html">Liga MX</a></li>
+                <li><a href="#">Ver todas las ligas</a></li>
+             </ul>
+           </li>
+           <li><a href=".html" style="color:rgb(255, 255, 255);">Europa</a>
+             <ul class="submenu" style="color:rgb(255, 255, 255);">
+               <li><a href="Premier.html">Premier League</a></li>
+               <li><a href="LigaOne.html">Ligue 1</a></li>
+               <li><a href="#">Ver todas las ligas</a></li>
+            </ul>
+          </li>
+           <li><a href=".html" style="color:rgb(255, 255, 255);">Asia</a>
+             <ul class="submenu">
+
+            </ul>
+          </li>
+        <li><a href="Acerca.html" style="color:rgb(255, 255, 255);">Acerca</a></li>
+      </nav>
+    </div>
+  </header>
+
+
+    <br><br>
+
+  <main>
+    <section>
+      <center><div class="noticia-color">
+      <center><h2 class=contenedor>Noticias</h2></center>
+
+      <!--   COLOR -->
+
+          <div class="colorr">
+            <input type="color" id="colorch" onchange="cambiarColor();" />
+            <input type="color" id="colorch1" onchange="cambiarColorText();" />
+          </div>
+          <h1 id="dummy"></h1>
+
+
+
+
+      <center><hr width="80%" noshade="noshade"/></center>
+    </div></center>
+    </section>
+
+
+    <div class="containerr">
+        <div class="card">
+          <img src="img/cr7ymessi.jpg">
+          <h4>Cristiano Ronaldo y Messi</h4>
+          <p>El sorteo de la Champions League 19 nos mostró los valores de estos dos jugadores </p>
+          <a href="#">Leer más</a>
+        </div>
+
+        <div class="card">
+          <img src="img/goleada.gif">
+          <h4>4 meses del historico </h4>
+          <h4>Liverpool vs Barcelona </h4>
+          <p>Así se recuerda la gran remontada que logró el equipo Ingles frente al equipo Culé </p>
+          <a href="#">Leer más</a>
+        </div>
+
+        <div class="card">
+          <img src="img/manchester.jpg">
+          <h4>Manchester City plantel mas caro</h4>
+          <p>Historico Manchester City logró ser la plantilla mas costosa de la historia del futbol.</p>
+          <a href="#">Leer más</a>
+        </div>
+
+        <div class="card">
+          <img src="img/salah.jpg">
+          <h4>El efecto Salah</h4>
+          <p>Salah ha logrado opacar el odio contra los musulmantes y otros credos.</p>
+          <a href="#">Leer más</a>
+        </div>
+
+        <div class="card">
+          <img src="img/nobita.jpg">
+          <h4>Denuncia a Youtuber por llamarlo 'nobita'</h4>
+          <p>El famoso Youtuber Español denunciado por el presidente del Barcelona por llamarle 'Nobita'</p>
+          <a href="#">Leer más</a>
+        </div>
+
+        <div class="card">
+          <img src="img/mbappe.jpg">
+          <h4>Mbappe en peligro ante la Champions</h4>
+          <p>La lesión del jugador Frances pone en peligro el debut en la Champions League</p>
+          <a href="#">Leer más</a>
+        </div>
+    </div>
+
+  </main>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <footer>
+    <div id="info"><br>
+      <p class="copy">Futbolin &copy; 2019</p>
+      <br>
+      <div class="sociales">
+        <a  class="icon-twitter" href="#"></a>
+        <a  class="icon-gmail" href="#"></a>
+
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
