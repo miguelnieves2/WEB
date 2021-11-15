@@ -3,95 +3,91 @@
 @import url(banner.css);
 @import url(blog.cs);
 @import url(noticias.css);
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;  /* El box-sizing se utiliza para hacer responsive */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* El box-sizing se utiliza para hacer responsive */
 }
 
 body {
-  width: 100%
-  font-family: 'Nunito', sans-serif;
+    width: 100% font-family: 'Nunito', sans-serif;
 }
 
-h2{
-  font-family: 'Nunito', sans-serif;
-  font-size: 56px;
+h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 56px;
 }
 
-h3{
-  font-family: 'Nunito', sans-serif;
-  font-size: 24px;
+h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
 }
 
-p{
-  font-family: 'Nunito', sans-serif;
-  font-size: 20px;
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
 }
+
 
 /* MENU */
 
-
-.menu > li{
-	position: relative;
-	display: inline-block;
+.menu>li {
+    position: relative;
+    display: inline-block;
 }
 
-.menu > li > a{
-	display: block;
-	padding: 15px 20px;
-	color: #353535;
-	font-family: 'Open sans';
-	text-decoration: none;
+.menu>li>a {
+    display: block;
+    padding: 15px 20px;
+    color: #353535;
+    font-family: 'Open sans';
+    text-decoration: none;
 }
 
-.menu li a:hover{
-	color: rgb(255, 255, 255);
-	transition: all .3s;
+.menu li a:hover {
+    color: rgb(255, 255, 255);
+    transition: all .3s;
 }
+
 
 /* Submenu*/
 
-.submenu{
-	position: absolute;
-	background: #333333;
-	width: 200%;
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 1.5s;
+.submenu {
+    position: absolute;
+    background: #333333;
+    width: 200%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
 }
 
-.submenu li a{
-	display: block;
-	padding: 15px;
-	color: #fff;
-	font-family: 'Open sans';
-	text-decoration: none;
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Open sans';
+    text-decoration: none;
 }
 
-.menu li:hover .submenu{
-	visibility: visible;
-	opacity: 1;
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
 }
-
-
-
-
-
 
 .btn-danger {
-  bottom: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  background: url('up1.png');
-  background-size: cover;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: url('up1.png');
+    background-size: cover;
 }
 
-.parallax{ /* efecto moverse la imagen con pagina */
+.parallax {
+    /* efecto moverse la imagen con pagina */
     width: 100%;
-    height:100vh;
+    height: 100vh;
     background-image: url(banner2.jpg);
     background-position: center;
     background-size: cover;
@@ -100,7 +96,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    filter:brightness(1.05);
+    filter: brightness(1.05);
 }
 
 .info {
@@ -134,20 +130,21 @@ p{
     flex-wrap: wrap;
 }
 
-        .imagenes {
-            width: 20%;
-            height: 510px;
-            overflow: hidden;
-            position: relative;
-        }
+.imagenes {
+    width: 20%;
+    height: 510px;
+    overflow: hidden;
+    position: relative;
+}
 
-        .imagenes img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+.imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-.sesgoarriba {   /* EFECTO SKEW (TRIANGULO DE IMAGEN ZONA ARRIBA DE LAS IMAGENES O GALERIA) */
+.sesgoarriba {
+    /* EFECTO SKEW (TRIANGULO DE IMAGEN ZONA ARRIBA DE LAS IMAGENES O GALERIA) */
     z-index: 10;
     position: absolute;
     top: 0;
@@ -157,7 +154,8 @@ p{
     border-color: #fff transparent transparent transparent;
 }
 
- .sesgoabajo {  /* EFECTO SKEW (TRIANGULO DE IMAGEN ZONA BAJA) */
+.sesgoabajo {
+    /* EFECTO SKEW (TRIANGULO DE IMAGEN ZONA BAJA) */
     z-index: 10;
     position: absolute;
     bottom: 0;
@@ -167,7 +165,8 @@ p{
     border-color: transparent transparent #fff transparent;
 }
 
-.nombre-galeria-soccerin{   /* DISEÑO TARJETA COLOR VERDE DEL NOMBRE SOCCERIN */
+.nombre-galeria-soccerin {
+    /* DISEÑO TARJETA COLOR VERDE DEL NOMBRE SOCCERIN */
     position: absolute;
     top: 0;
     left: 0;
@@ -176,99 +175,101 @@ p{
     background: rgba(52, 73, 94, 0.815);
 }
 
-          .nombre-galeria-soccerin h4 {   /* TEXTO EN BLANCO */
-              position: relative;
-              top: 45%;
-              text-align: center;
-              color: #fff;
-              font-size: 35px;
-              font-family: 'Nunito', sans-serif;
-          }
-
-          .nombre-galeria-soccerin div {    /* BARRA DEBAJO DEL NOMBRE SOCCERIN */
-              position: relative;
-              display: block;
-              top: 46%;
-              width: 40px;
-              height: 5px;
-              background: #fff;
-              margin: auto;
-          }
-
-
-
-header{
-  width: 100%;
-  height: 50px;
-  background: rgba(52, 52, 51, 0.38);
-  color: #fff;
-  position: fixed; /* el menu-bar se quede quieto/pegado al momento de bajar por el documento*/
-  top: 0;
-  left: 0;
-  z-index: 100;
+.nombre-galeria-soccerin h4 {
+    /* TEXTO EN BLANCO */
+    position: relative;
+    top: 45%;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Nunito', sans-serif;
 }
 
-header h1{  /* efecto letra "futbolin"*/
-  text-shadow: 2px 2px 2px rgb(32, 113, 235);
+.nombre-galeria-soccerin div {
+    /* BARRA DEBAJO DEL NOMBRE SOCCERIN */
+    position: relative;
+    display: block;
+    top: 46%;
+    width: 40px;
+    height: 5px;
+    background: #fff;
+    margin: auto;
 }
 
-
-
-.contenedor {  /* en este proyecto todos los elementos trabajaran con el elemento div como clase contenedor */
-  width: 98%; /* se aplica de 98% para al momento de hacer responsive este alineado con todos los elementos*/
-  margin:auto;
+header {
+    width: 100%;
+    height: 50px;
+    background: rgba(52, 52, 51, 0.38);
+    color: #fff;
+    position: fixed;
+    /* el menu-bar se quede quieto/pegado al momento de bajar por el documento*/
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
-h1{
-  float: left;
+header h1 {
+    /* efecto letra "futbolin"*/
+    text-shadow: 2px 2px 2px rgb(32, 113, 235);
 }
 
-header .contenedor{
-  display: table;
+.contenedor {
+    /* en este proyecto todos los elementos trabajaran con el elemento div como clase contenedor */
+    width: 98%;
+    /* se aplica de 98% para al momento de hacer responsive este alineado con todos los elementos*/
+    margin: auto;
 }
 
-section{
-  width: 100%;
-  margin-bottom: 25px;
+h1 {
+    float: left;
 }
 
-#bienvenidos{
-  text-align: center;
+header .contenedor {
+    display: table;
 }
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#bienvenidos {
+    text-align: center;
+}
+
 
 /* Parte de abajo copyright */
 
-footer #info{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* esten centrados */
-  padding-bottom: 25px;
-  background: #333;
-  color: #fff;
+footer #info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* esten centrados */
+    padding-bottom: 25px;
+    background: #333;
+    color: #fff;
 }
 
-
-.copy{
-  font-size: 20px;
-  margin-top: 10px;
-
+.copy {
+    font-size: 20px;
+    margin-top: 10px;
 }
 
-.sociales{
-  width: 100%;
-  text-align: center;
-  font-size: 24px;
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
 }
 
-.sociales a{
-  color: #fff;
-  text-decoration: none;
+.sociales a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.noticiass{
-  position: relative;
-  margin-left: 5%;
-  margin-right: 5%;
+.noticiass {
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 
@@ -277,18 +278,20 @@ footer #info{
 
 /* Box Model */
 
-	*, *:before, *:after {
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-	}
-
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 
 /* RESPONSIVE */
 
-@media (min-width:1024px) {  /* Correr el header y contenedor a la derecha */
-  .contenedor{
-    width: 1120px;
-  }
+@media (min-width:1024px) {
+    /* Correr el header y contenedor a la derecha */
+    .contenedor {
+        width: 1120px;
+    }
 }
